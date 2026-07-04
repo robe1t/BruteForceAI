@@ -54,3 +54,11 @@ Thumbs.db
 # Project specific
 backend/data/screenshots/
 backend/data/uploads/
+
+# Test files
+test_*.py
+backend/tests/
+backend/check_*.py
+
+# Logo
+logo.png
