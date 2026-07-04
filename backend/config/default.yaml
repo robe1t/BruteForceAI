@@ -1,0 +1,32 @@
+# Default configuration
+server:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+
+database:
+  path: "data/bruteforce.db"
+
+browser:
+  headless: true
+  timeout: 30000  # 30 seconds
+  max_instances: 1
+
+task:
+  max_concurrent: 1
+  timeout: 3600  # 1 hour
+  default_delay: 0
+  default_jitter: 0
+
+llm:
+  timeout: 120  # 2 minutes
+  max_tokens: 4096
+  temperature: 0.7
+
+captcha:
+  ocr_enabled: true
+
+paths:
+  screenshots: "data/screenshots"
+  uploads: "data/uploads"
+  dictionaries: "data/dictionaries"

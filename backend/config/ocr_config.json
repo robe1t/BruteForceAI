@@ -1,0 +1,9 @@
+{
+    "vision_ocr": {
+        "enabled": true,
+        "api_key": "sk-sjqxpwopgsymbxwlzqhgbbedxnjighjjfqtzfsqxdirxukva",
+        "api_url": "https://api.siliconflow.cn/v1/chat/completions",
+        "model": "deepseek-ai/DeepSeek-OCR"
+    },
+    "note": "设置 api_key 后启用 Vision OCR 增强识别"
+}

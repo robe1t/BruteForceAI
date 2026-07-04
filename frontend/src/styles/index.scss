@@ -1,0 +1,184 @@
+@import './variables.scss';
+@import './reset.scss';
+
+// 全局样式
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  color: #303133;
+  background-color: #f5f7fa;
+}
+
+// 卡片容器
+.page-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+// 页面标题
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ebeef5;
+
+  .page-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #303133;
+    margin: 0;
+  }
+}
+
+// 统计卡片网格
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+// 统计卡片 - 白色简洁风格
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  color: #303133;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #409eff;
+
+  &.stat-primary {
+    border-left-color: #409eff;
+  }
+
+  &.stat-success {
+    border-left-color: #67c23a;
+  }
+
+  &.stat-warning {
+    border-left-color: #e6a23c;
+  }
+
+  &.stat-info {
+    border-left-color: #909399;
+  }
+
+  .stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #303133;
+  }
+
+  .stat-label {
+    font-size: 14px;
+    color: #909399;
+  }
+
+  .stat-icon {
+    font-size: 24px;
+    opacity: 0.6;
+  }
+}
+
+// 表单卡片
+.form-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+  border: 1px solid #ebeef5;
+
+  .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #303133;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebeef5;
+  }
+}
+
+// 滚动容器
+.scroll-container {
+  max-height: 300px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #dcdfe6;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f5f7fa;
+  }
+}
+
+// 日志样式
+.log-container {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #d4d4d4;
+  max-height: 400px;
+  overflow-y: auto;
+
+  .log-item {
+    margin-bottom: 4px;
+
+    &.log-info {
+      color: #4fc3f7;
+    }
+
+    &.log-success {
+      color: #81c784;
+    }
+
+    &.log-warning {
+      color: #ffb74d;
+    }
+
+    &.log-error {
+      color: #e57373;
+    }
+
+    .log-time {
+      color: #757575;
+      margin-right: 8px;
+    }
+  }
+}
+
+// 状态标签颜色
+.status-running {
+  color: #409eff;
+}
+
+.status-completed {
+  color: #67c23a;
+}
+
+.status-pending {
+  color: #e6a23c;
+}
+
+.status-stopped {
+  color: #909399;
+}
+
+.status-failed {
+  color: #f56c6c;
+}

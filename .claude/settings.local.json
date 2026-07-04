@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"C:/study/biyesheji/BruteForceAI-main2\" && mkdir -p backend/app/api backend/app/core backend/app/captcha backend/app/llm backend/app/database backend/app/utils backend/tests backend/config backend/data/screenshots)"
+    ]
+  }
+}
