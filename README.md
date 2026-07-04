@@ -11,7 +11,7 @@
 
 **Advanced LLM-powered brute-force tool combining AI intelligence with automated login attacks**
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Examples](#-examples) • [Configuration](#️-configuration-options) • [License](#-license)
+[Features](#-features) • [Quick Start](#-quick-start) • [Installation](#-installation) • [Usage](#-usage) • [Examples](#-examples) • [Configuration](#️-configuration-options) • [License](#-license)
 
 </div>
 
@@ -35,12 +35,54 @@ BruteForceAI is an advanced penetration testing tool that revolutionizes traditi
 
 ---
 
+## 🚀 Quick Start
+
+Get BruteForceAI up and running in minutes with the web interface:
+
+### 1. Install Dependencies
+
+```bash
+# Backend dependencies
+cd backend
+pip install -r requirements.txt
+playwright install chromium
+
+# Frontend dependencies
+cd ../frontend
+npm install
+```
+
+### 2. Launch the Application
+
+```bash
+# From the project root
+python start.py
+```
+
+This will start:
+- Backend server at `http://localhost:5000`
+- Frontend interface at `http://localhost:3000`
+
+### 3. Access the Web UI
+
+Open your browser and navigate to `http://localhost:3000` to use the graphical interface!
+
+---
+
 ## 🌟 Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=MorDavid/BruteForceAI&type=Date)](https://www.star-history.com/#MorDavid/BruteForceAI&Date)
 
 ---
 
 ## ✨ Features
+
+### 🖥️ **Modern Web Interface**
+- Beautiful Vue.js-based dashboard
+- Real-time WebSocket updates
+- Task management and monitoring
+- Dictionary management
+- Comprehensive reports and analytics
+- Configuration panel for LLM providers
 
 ### 🔍 **Intelligent Analysis**
 - LLM-powered form selector identification (Ollama/Groq)
@@ -148,7 +190,23 @@ python main.py analyze --urls targets.txt --llm-provider ollama --llm-model llam
 
 ## 📖 Usage
 
-### Basic Commands
+### Web Interface (Recommended)
+
+The easiest way to use BruteForceAI is through the modern web interface:
+
+```bash
+# Start the web application
+python start.py
+```
+
+Then open `http://localhost:3000` in your browser to access:
+- Dashboard - Overview of tasks and statistics
+- Tasks - Create, monitor, and manage attack tasks
+- Dictionary - Manage username and password lists
+- Reports - View detailed analysis and results
+- Config - Configure LLM providers and settings
+
+### Command Line Interface (CLI)
 
 #### Stage 1: Analyze Login Forms
 ```bash
