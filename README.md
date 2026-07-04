@@ -8,6 +8,8 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/License-Non--Commercial-orange?style=for-the-badge)
 ![AI Powered](https://img.shields.io/badge/AI-Powered-green?style=for-the-badge&logo=openai&logoColor=white)
+![GitHub repo stars](https://img.shields.io/github/stars/robe1t/BruteForceAI?style=social)
+![GitHub repo forks](https://img.shields.io/github/forks/robe1t/BruteForceAI?style=social)
 
 **Advanced LLM-powered brute-force tool combining AI intelligence with automated login attacks**
 
@@ -66,11 +68,6 @@ This will start:
 ### 3. Access the Web UI
 
 Open your browser and navigate to `http://localhost:3000` to use the graphical interface!
-
----
-
-## 🌟 Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=MorDavid/BruteForceAI&type=Date)](https://www.star-history.com/#MorDavid/BruteForceAI&Date)
 
 ---
 
@@ -361,38 +358,6 @@ python main.py --skip-version-check analyze --urls targets.txt
 | `--telegram-webhook` | Telegram bot token |
 | `--telegram-chat-id` | Telegram chat ID |
 
-### 🔄 Update Management
-
-BruteForceAI includes simple update checking to keep you informed about new releases.
-
-### Automatic Check
-- Checks for updates **every time** the tool starts
-- Shows one-line status: either "✅ up to date" or "🔄 Update available"
-- Quick 3-second timeout - no delays
-- Silent network failure (no error messages)
-- **Skip with**: `--skip-version-check` flag
-
-### Manual Check (Detailed)
-```bash
-# Check for updates manually (same as automatic but can save to file)
-python main.py check-updates
-
-# Check with output to file
-python main.py check-updates --output update_check.txt
-```
-
-### Update Information
-- **Up to date**: `✅ BruteForceAI v1.0.0 is up to date`
-- **Update available**: `🔄 Update available: v1.0.0 → v1.1.0 | Download: https://github.com/...`
-
-### Performance
-- **Timeout**: 3 seconds maximum
-- **No delays**: Instant if network unavailable
-- **No spam**: One simple line per check
-
-### Version Source
-Updates are checked against: `https://mordavid.com/md_versions.yaml`
-
 ---
 
 ## 🗄️ Database Schema
@@ -460,38 +425,19 @@ Users are responsible for complying with all applicable laws and regulations. Th
 
 ## 📋 Changelog
 
-### v1.0.0 (Current)
+### v1.0.1
+- 📝 Updated README to remove original author references
+- 📝 Added proper badges pointing to current repository
+- 📝 Added QUICKSTART.md for easy onboarding
+- 📝 Added web interface documentation
+
+### v1.0.0
 - ✨ Initial release
 - 🧠 LLM-powered form analysis
 - ⚡ Multi-threaded attacks
 - 🎭 Advanced evasion techniques
 - 🔔 Webhook notifications
 - 📊 Comprehensive logging
-- 🔄 Automatic update checking
-
----
-
-## 👨‍💻 About the Author
-
-**Mor David** - Offensive Security Specialist & AI Security Researcher
-
-I specialize in **offensive security** with a focus on integrating **Artificial Intelligence** and **Large Language Models (LLM)** into penetration testing workflows. My expertise combines traditional red team techniques with cutting-edge AI technologies to develop next-generation security tools.
-
-### 🔗 Connect with Me
-- **LinkedIn**: [linkedin.com/in/mor-david-cyber](https://linkedin.com/in/mor-david-cyber)
-- **Website**: [www.mordavid.com](https://www.mordavid.com)
-
-### 🛡️ RootSec Community
-Join our cybersecurity community for the latest in offensive security, AI integration, and advanced penetration testing techniques:
-
-**🔗 [t.me/root_sec](https://t.me/root_sec)**
-
-RootSec is a community of security professionals, researchers, and enthusiasts sharing knowledge about:
-- Advanced penetration testing techniques
-- AI-powered security tools
-- Red team methodologies
-- Security research and development
-- Industry insights and discussions
 
 ---
 
@@ -517,17 +463,10 @@ See the [LICENSE.md](LICENSE.md) file for complete terms and conditions.
 
 ---
 
-## 📊 Statistics
-
-![GitHub stars](https://img.shields.io/github/stars/mordavid/BruteForceAI?style=social)
-![GitHub forks](https://img.shields.io/github/forks/mordavid/BruteForceAI?style=social)
-
----
-
 <div align="center">
 
 **⭐ Star this repository if you find it useful!**
 
-**Made with ❤️ by [Mor David](https://www.mordavid.com) | Join [RootSec Community](https://t.me/root_sec)**
+**Made with ❤️**
 
 </div> 
